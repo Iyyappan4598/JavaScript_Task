@@ -11,59 +11,64 @@
         //1. check if the number is odd or even.
         
         //Method 1
-        let number=prompt("enter your value");
-        //if the number is even
-        if(number % 2 ==0){
-            console.log("The number is even")
-        }
-        //if the number is odd
-        else{
-            console.log("The number is odd")
-        }
+        // let number=prompt("enter your value");
+        // //if the number is even
+        // if(number % 2 ==0){
+        //     console.log("The number is even")
+        // }
+        // //if the number is odd
+        // else{
+        //     console.log("The number is odd")
+        // }
 
         //Method 2
-        let num=54
-        if(num % 2 ==0){
-            console.log("This is even number")
-        }
-        else{
-            console.log("This is odd number")
-        }
+        // let num=54
+        // if(num % 2 ==0){
+        //     console.log("This is even number")
+        // }
+        // else{
+        //     console.log("This is odd number")
+        // }
 
         //2. compare 2 numbers and display the largest number
-        var a,b;
-        a=10;
-        b=30;
-        if(a>b){
-            console.log(a, "A is Greater than B", b);
-        }else if(a<b){
-            console.log(b, "B is Greater than A", a);
-        }else{
-            console.log(a, "A is Equal to B", b);
-        }
+        // var a,b;
+        // a=10;
+        // b=30;
+        // if(a>b){
+        //     console.log(a, "A is Greater than B", b);
+        // }else if(a<b){
+        //     console.log(b, "B is Greater than A", a);
+        // }else{
+        //     console.log(a, "A is Equal to B", b);
+        // }
 
 
         //3. Write a program that calculate the grade with use of given percentage
-        var grade=prompt("enter your percentage")
-        if (grade>90){
-            console.log("The grade is S");
-        }else if(grade>80){
-            console.log("The grade is A");
-        }else if(grade>70){
-            console.log("The grade is B");
-        }else if(grade>60){
-            console.log("The grade is C");
-        }else if(grade>50){
-            console.log("The grade is D");
-        }else if(grade>40){
-            console.log("The grade is E");
-        }else if(grade>0){
-            console.log("You are Fail")
-        }else if(grade<0){
-            console.log("you enter a minus value")
+        let Tamil,English,Maths,Science,Social,sum,avg
+        Tamil=97
+        English=55
+        Maths=60
+        Science=40
+        Social=66
+        sum=Tamil+English+Maths+Science+Social
+            console.log("total marks =" ,sum)
+            avg=sum/5
+            console.log(avg,'percentage')
+
+        if(avg>=90){
+            console.log("Grade A")
         }
-        else{
-            console.log("Empty")
+            else if(avg>=80){
+            console.log("Grade B")
+        }
+            else if(avg>=60){
+            console.log("Grade C")
+        }
+            else if(avg>=40){
+            console.log("Grade D")
+        }
+            else{
+            console.log("Fail")
         }
 
     </script>

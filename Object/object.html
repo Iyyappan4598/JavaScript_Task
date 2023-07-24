@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Method 1
+        var Student={
+            Firstname: "Ganesh",
+            Lastname: "S",
+            Fathername: "Sivan",
+            Mothername: "Gowri",
+            age: 12,
+            mobile: 9876543210,
+        }
+
+        //Using Dot Property Accessor
+        console.log(Student.Fathername,Student.Mothername, "object")
+
+        console.log(Student,"object1")
+
+        //Method 2
+        var myData={};
+        myData.name="Navin";
+        myData.age=15;
+        myData.mobile=879645123;
+
+        //Using Square Property Accessor
+        console.log(myData['name'], "object")
+
+        console.log(myData, "object2")
+
+        //Method 3
+        var details= new Object();
+        details.name="Ram"
+        details.age=40;
+        details.work="Paginator";
+
+        //Using Object Destructuring Property
+        var {name, work}= details;
+        console.log(name, work, "object")
+
+        console.log(details, "object3")
+
+        //Students Data
+        var Studentsdata=[{
+            Firstname: "Ganesh",
+            Lastname: "S",
+            Fathername: "Sivan",
+            Mothername: "Gowri",
+            age: 12,
+            mobile: 9876543210,
+        },
+        {
+            Firstname: "Lakshman",
+            Lastname: "R",
+            Fathername: "Ramu",
+            Mothername: "Ramya",
+            age: 14,
+            mobile: 8965543120,
+        },
+        {
+            Firstname: "Iyyappan",
+            Lastname: "G",
+            Fathername: "Gurupatham",
+            Mothername: "Manimegalai",
+            age: 25,
+            mobile: 8754707812,
+        },
+        {
+            Firstname: "Agar",
+            Lastname: "R",
+            Fathername: "Ramamoorthy",
+            Mothername: "Radha",
+            age: 22,
+            mobile: 7689543210,
+        },
+        {
+            Firstname: "Vijaykumar",
+            Lastname: "E",
+            Fathername: "Ezhumalai",
+            Mothername: "Arthi",
+            age: 32,
+            mobile: 9854763210,
+        }]        
+
+        console.log(Studentsdata,"object1")
+    </script>
+</body>
+</html>

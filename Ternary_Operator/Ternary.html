@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1. Check if a number is even or odd.
+      var a = 13;
+      var result = a % 2 == 0 ? "even" : "odd";
+      console.log(result);
+
+      //2. Find the maximum of tow numbers.
+      var value1, value2;
+      value1 = 60;
+      value2 = 40;
+      var res = value1 > value2 ? value1 : value2;
+      console.log("the maximum number is", res);
+
+      //3. check if a year is a Leap year.
+      var year = 2001;
+      var leap = year % 4 == 0 ? "Leap Year" : "Not a Leap Year";
+      console.log(leap);
+
+      //4. check if a number is positive, negative, or zero.
+      let num = 2;
+      let result1 = num >= 0 ? (num == 0 ? "Zero" : "Positive") : "Negative";
+      console.log(result1);
+
+      //5. Find the absolute value of a number.
+      var value = -5;
+      var abs = value < 0 ? value * -1 : value;
+      console.log(abs);
+
+      //6. Check if a number is a mulitple of both 3 and 5
+      var input = 14;
+      var multiply =
+        input % 3 == 0 && input % 5 == 0
+          ? "multiple of both 3 an 5"
+          : "Not multiple of both 3 an 5";
+      console.log(multiply);
+
+      //7. Check if a given year is a Century year (ends with 00)
+      let centyear = 2020;
+      let century =
+        centyear % 100 == 0 ? "this is a century year" : "Not a century Year";
+      console.log(century);
+
+      //9. Check if a person can vote based on their age(18 or older)
+      var age = 25;
+      var vote = age > 18 ? "eligible to vote" : "not eligible to vote";
+      console.log(vote);
+    </script>
+  </body>
+</html>

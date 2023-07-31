@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. print all the numbers from 1-15.
+        var n=15
+        for (i = 1; i <= n; i++) {
+                console.log(i, "print number 1-15");
+            }
+
+        //2.  print odd numbers from 6-29.
+        var x=29
+        for (i = 7; i <= x; i+=2) {
+                console.log(i, "odd numbers 6-29");
+            }
+
+        //3.print even numbers from 20-40.
+        var y=40
+        for (i = 20; i <= y; i+=2) {
+                console.log(i, "even numbers 20-40");
+            }
+
+        //4. Iterate through all numbers from 1-45. Print the following: METHOD 1
+            // for multiple of 3 print ".  ".
+            // for multiple of 5 print ".  ".
+            // for multiple of 3 and 5 print ".  ". 
+            // let value=45
+            // for (i = 1; i <= value; i++) {
+            //         if(i % 3 === 0) {
+            //             console.log(i + ": multiple of 3");
+            //         } else if (i % 5 === 0) {
+            //             console.log(i + ": multiple of 5");
+            //         }else if(i % 3 === 0 && i % 5 === 0) {
+            //             console.log(i + ": multiple of 3 and 5");
+            //         } else {
+            //             console.log(i);
+            //         }
+            //     }
+
+            // METHOD 2
+                for (let i = 1; i <= 45; i++) {
+                    if (i % 3 === 0 && i % 5 === 0) {
+                        console.log(i + " is a multiple of both 3 and 5.");
+                    } else if (i % 3 === 0) {
+                        console.log(i + " is a multiple of 3.");
+                    } else if (i % 5 === 0) {
+                        console.log(i + " is a multiple of 5.");
+                    }
+                }
+
+        //5. print all the elements of an array.
+            const arr = [1990, 2000, 2010, 2020, 2030];
+            for (let i = 0; i < arr.length; i++) {
+                console.log(arr[i], "print all elements");
+            }
+
+        //6. calculate sum of all elements in an array.
+            const array = [10, 20, 30, 40, 5];
+            let sum = 0;
+            for (let i = 0; i < array.length; i++) {
+                sum += array[i];
+            }
+            console.log("Sum of all elements:", sum);
+
+        //7. calculate the sum of all numbers from 1 to 100
+            let number = 0;
+                for (let i = 1; i <= 100; i++) {
+                number += i;
+            }
+            console.log("The sum of all numbers from 1 to 100 is: " + number);
+
+        //8. Calculate the factorial of a given number.
+            var x = 1;
+                for (i = 1; i <= 4; i++) {
+                    x *= i;
+                    console.log("Factorial of x value is equal to", x);
+                }
+        //9. Print a pattern of * in a triangle shape.
+            const N = 5
+                for (let i = 1; i <= N; i++) {
+                    let row = "";
+                    for (let star = 1; star <= N - i; star++) {
+                        row += " ";
+                    }
+                    for (let j = 1; j <= 2 * i - 1; j++) {
+                        row += "*";
+                    }
+                    console.log(row);
+                }
+            //10. Find maximum element in an array
+            const myarray = [17, 5, 20, 35, 30];
+                let max = myarray[0];
+
+                for (let i = 1; i < myarray.length; i++) {
+                    if (myarray[i] > max) {
+                        max = myarray[i];
+                    }
+                }
+                console.log("The maximum element is: " + max);
+            
+            //11. Find Fibonacci series of given number
+            
+                        
+
+    </script>
+</body>
+</html>
